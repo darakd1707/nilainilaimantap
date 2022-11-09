@@ -1,0 +1,92 @@
+package tugasburatih;
+
+import java.util.Scanner;
+
+public class tugas14 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a, b, c, d, e = 0;
+
+        System.out.print("Score pertama : ");
+        a = input.nextInt();
+        System.out.print("Score kedua   : ");
+        b = input.nextInt();
+        System.out.print("Score ketiga  : ");
+        c = input.nextInt();
+        System.out.print("Score keempat : ");
+        d = input.nextInt();
+        System.out.print("Score kelima  : ");
+        e = input.nextInt();
+        System.out.println("");
+        System.out.println("-------HASIL AKHIR-------");
+
+        //nilai pertama
+        if (a < 60) {
+            System.out.println("Score pertama : " + a + " ---> Kurang");
+        } else if (a < 70) {
+            System.out.println("Score pertama : " + a + " ---> Cukup");
+        } else if (a < 80) {
+            System.out.println("Score pertama : " + a + " ---> Baik");
+        } else if (a > 80) {
+            System.out.println("Score pertama : " + a + " ---> Luar biasa mantap");
+        }
+
+        //nilai kedua
+        if (b < 60) {
+            System.out.println("Score kedua   : " + b + " ---> Kurang");
+        } else if (b < 70) {
+            System.out.println("Score kedua   : " + b + " ---> Cukup");
+        } else if (b < 80) {
+            System.out.println("Score kedua   : " + b + " ---> Baik");
+        } else if (b > 80) {
+            System.out.println("Score kedua   : " + b + " ---> Luar biasa mantap");
+        }
+
+        //nilai ketiga
+        if (c < 60) {
+            System.out.println("Score ketiga  : " + c + " ---> Kurang");
+        } else if (c < 70) {
+            System.out.println("Score ketiga  : " + c + " ---> Cukup");
+        } else if (c < 80) {
+            System.out.println("Score ketiga  : " + c + " ---> Baik");
+        } else if (c > 80) {
+            System.out.println("Score ketiga  : " + c + " ---> Luar biasa mantap");
+        }
+
+        //nilai keempat
+        if (d < 60) {
+            System.out.println("Score keempat : " + d + " ---> Kurang");
+        } else if (d < 70) {
+            System.out.println("Score keempat : " + d + " ---> Cukup");
+        } else if (d < 80) {
+            System.out.println("Score keempat : " + d + " ---> Baik");
+        } else if (d > 80) {
+            System.out.println("Score keempat : " + d + " ---> Luar biasa mantap");
+        }
+
+        //nilai kelima
+        if (e < 60) {
+            System.out.println("Score kelima  : " + e + " ---> Kurang");
+        } else if (e < 70) {
+            System.out.println("Score kelima  : " + e + " ---> Cukup");
+        } else if (e < 80) {
+            System.out.println("Score kelima  : " + e + " ---> Baik");
+        } else if (e > 80) {
+            System.out.println("Score kelima  : " + e + " ---> Luar biasa mantap");
+        }
+
+        System.out.println("-----------------------------");
+        int jumlah = a + b + c + d + e;
+        System.out.println("Jumlah score anda: " + jumlah);
+        if (jumlah < 60) {
+            System.out.println("Duh kurang");
+        } else if (jumlah < 70) {
+            System.out.println("Ya cukuplah");
+        } else if (jumlah < 80) {
+            System.out.println("Baik, tengah-tengah lah");
+        } else if (jumlah > 80) {
+            System.out.println("Luar biasa mantap");
+        }
+    }
+}
